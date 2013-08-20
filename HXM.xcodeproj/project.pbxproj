@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7B4843C17C3D6BC00010EFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B4843B17C3D6BC00010EFB /* Cocoa.framework */; };
+		B7B4844617C3D6BC00010EFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7B4844417C3D6BC00010EFB /* InfoPlist.strings */; };
+		B7B4844817C3D6BC00010EFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B4844717C3D6BC00010EFB /* main.m */; };
+		B7B4844C17C3D6BC00010EFB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B7B4844A17C3D6BC00010EFB /* Credits.rtf */; };
+		B7B4844F17C3D6BC00010EFB /* HXMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B4844E17C3D6BC00010EFB /* HXMAppDelegate.m */; };
+		B7B4845217C3D6BC00010EFB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B4845017C3D6BC00010EFB /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B7B4843817C3D6BC00010EFB /* HXM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7B4843B17C3D6BC00010EFB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B7B4843E17C3D6BC00010EFB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B7B4843F17C3D6BC00010EFB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B7B4844017C3D6BC00010EFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B7B4844317C3D6BC00010EFB /* HXM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HXM-Info.plist"; sourceTree = "<group>"; };
+		B7B4844517C3D6BC00010EFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B7B4844717C3D6BC00010EFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7B4844917C3D6BC00010EFB /* HXM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HXM-Prefix.pch"; sourceTree = "<group>"; };
+		B7B4844B17C3D6BC00010EFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B7B4844D17C3D6BC00010EFB /* HXMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXMAppDelegate.h; sourceTree = "<group>"; };
+		B7B4844E17C3D6BC00010EFB /* HXMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXMAppDelegate.m; sourceTree = "<group>"; };
+		B7B4845117C3D6BC00010EFB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7B4843517C3D6BC00010EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B4843C17C3D6BC00010EFB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7B4842F17C3D6BC00010EFB = {
+			isa = PBXGroup;
+			children = (
+				B7B4844117C3D6BC00010EFB /* HXM */,
+				B7B4843A17C3D6BC00010EFB /* Frameworks */,
+				B7B4843917C3D6BC00010EFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7B4843917C3D6BC00010EFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7B4843817C3D6BC00010EFB /* HXM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7B4843A17C3D6BC00010EFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7B4843B17C3D6BC00010EFB /* Cocoa.framework */,
+				B7B4843D17C3D6BC00010EFB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7B4843D17C3D6BC00010EFB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7B4843E17C3D6BC00010EFB /* AppKit.framework */,
+				B7B4843F17C3D6BC00010EFB /* CoreData.framework */,
+				B7B4844017C3D6BC00010EFB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B7B4844117C3D6BC00010EFB /* HXM */ = {
+			isa = PBXGroup;
+			children = (
+				B7B4844D17C3D6BC00010EFB /* HXMAppDelegate.h */,
+				B7B4844E17C3D6BC00010EFB /* HXMAppDelegate.m */,
+				B7B4845017C3D6BC00010EFB /* MainMenu.xib */,
+				B7B4844217C3D6BC00010EFB /* Supporting Files */,
+			);
+			path = HXM;
+			sourceTree = "<group>";
+		};
+		B7B4844217C3D6BC00010EFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7B4844317C3D6BC00010EFB /* HXM-Info.plist */,
+				B7B4844417C3D6BC00010EFB /* InfoPlist.strings */,
+				B7B4844717C3D6BC00010EFB /* main.m */,
+				B7B4844917C3D6BC00010EFB /* HXM-Prefix.pch */,
+				B7B4844A17C3D6BC00010EFB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7B4843717C3D6BC00010EFB /* HXM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7B4845517C3D6BC00010EFB /* Build configuration list for PBXNativeTarget "HXM" */;
+			buildPhases = (
+				B7B4843417C3D6BC00010EFB /* Sources */,
+				B7B4843517C3D6BC00010EFB /* Frameworks */,
+				B7B4843617C3D6BC00010EFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HXM;
+			productName = HXM;
+			productReference = B7B4843817C3D6BC00010EFB /* HXM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7B4843017C3D6BC00010EFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HXM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = BCH;
+			};
+			buildConfigurationList = B7B4843317C3D6BC00010EFB /* Build configuration list for PBXProject "HXM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B7B4842F17C3D6BC00010EFB;
+			productRefGroup = B7B4843917C3D6BC00010EFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7B4843717C3D6BC00010EFB /* HXM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7B4843617C3D6BC00010EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B4844617C3D6BC00010EFB /* InfoPlist.strings in Resources */,
+				B7B4844C17C3D6BC00010EFB /* Credits.rtf in Resources */,
+				B7B4845217C3D6BC00010EFB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7B4843417C3D6BC00010EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B4844817C3D6BC00010EFB /* main.m in Sources */,
+				B7B4844F17C3D6BC00010EFB /* HXMAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7B4844417C3D6BC00010EFB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7B4844517C3D6BC00010EFB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B7B4844A17C3D6BC00010EFB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7B4844B17C3D6BC00010EFB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B7B4845017C3D6BC00010EFB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7B4845117C3D6BC00010EFB /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7B4845317C3D6BC00010EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B7B4845417C3D6BC00010EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B7B4845617C3D6BC00010EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HXM/HXM-Prefix.pch";
+				INFOPLIST_FILE = "HXM/HXM-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B7B4845717C3D6BC00010EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HXM/HXM-Prefix.pch";
+				INFOPLIST_FILE = "HXM/HXM-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7B4843317C3D6BC00010EFB /* Build configuration list for PBXProject "HXM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B4845317C3D6BC00010EFB /* Debug */,
+				B7B4845417C3D6BC00010EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7B4845517C3D6BC00010EFB /* Build configuration list for PBXNativeTarget "HXM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B4845617C3D6BC00010EFB /* Debug */,
+				B7B4845717C3D6BC00010EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7B4843017C3D6BC00010EFB /* Project object */;
+}
