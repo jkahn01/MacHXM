@@ -7,15 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7852BA717FCA0EE0061F1AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B4843B17C3D6BC00010EFB /* Cocoa.framework */; };
+		B7852BAD17FCA0EE0061F1AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7852BAB17FCA0EE0061F1AE /* InfoPlist.strings */; };
+		B7852BB517FCA1BC0061F1AE /* OSCAddressSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852B7D17FC941B0061F1AE /* OSCAddressSpace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BB617FCA1BC0061F1AE /* OSCBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852B7F17FC941B0061F1AE /* OSCBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BB717FCA1BC0061F1AE /* OSCConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852B8117FC941B0061F1AE /* OSCConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BB817FCA1BC0061F1AE /* OSCInPort.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852B8217FC941B0061F1AE /* OSCInPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BB917FCA1BC0061F1AE /* OSCManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852B8417FC941B0061F1AE /* OSCManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BBA17FCA1BC0061F1AE /* OSCMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852B8617FC941B0061F1AE /* OSCMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BBB17FCA1BC0061F1AE /* OSCNode.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852B8817FC941B0061F1AE /* OSCNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BBC17FCA1BC0061F1AE /* OSCOutPort.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852B8A17FC941B0061F1AE /* OSCOutPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BBD17FCA1BC0061F1AE /* OSCPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852B8C17FC941B0061F1AE /* OSCPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BBE17FCA1BC0061F1AE /* OSCStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852B8E17FC941B0061F1AE /* OSCStringAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BBF17FCA1BC0061F1AE /* OSCValue.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852B9017FC941B0061F1AE /* OSCValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BC017FCA1BC0061F1AE /* OSCZeroConfDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852B9217FC941B0061F1AE /* OSCZeroConfDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BC117FCA1BC0061F1AE /* OSCZeroConfManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852B9417FC941B0061F1AE /* OSCZeroConfManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BC217FCA1BC0061F1AE /* VVOSC.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852B7B17FC93F60061F1AE /* VVOSC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BC317FCA2020061F1AE /* OSCAddressSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852B7E17FC941B0061F1AE /* OSCAddressSpace.m */; };
+		B7852BC417FCA2020061F1AE /* OSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852B8017FC941B0061F1AE /* OSCBundle.m */; };
+		B7852BC517FCA2020061F1AE /* OSCInPort.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852B8317FC941B0061F1AE /* OSCInPort.m */; };
+		B7852BC617FCA2020061F1AE /* OSCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852B8517FC941B0061F1AE /* OSCManager.m */; };
+		B7852BC717FCA2020061F1AE /* OSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852B8717FC941B0061F1AE /* OSCMessage.m */; };
+		B7852BC817FCA2020061F1AE /* OSCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852B8917FC941B0061F1AE /* OSCNode.m */; };
+		B7852BC917FCA2020061F1AE /* OSCOutPort.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852B8B17FC941B0061F1AE /* OSCOutPort.m */; };
+		B7852BCA17FCA2020061F1AE /* OSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852B8D17FC941B0061F1AE /* OSCPacket.m */; };
+		B7852BCB17FCA2020061F1AE /* OSCStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852B8F17FC941B0061F1AE /* OSCStringAdditions.m */; };
+		B7852BCC17FCA2020061F1AE /* OSCValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852B9117FC941B0061F1AE /* OSCValue.m */; };
+		B7852BCD17FCA2020061F1AE /* OSCZeroConfDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852B9317FC941B0061F1AE /* OSCZeroConfDomain.m */; };
+		B7852BCE17FCA2020061F1AE /* OSCZeroConfManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852B9517FC941B0061F1AE /* OSCZeroConfManager.m */; };
+		B7852BD017FCA2210061F1AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7852BCF17FCA2210061F1AE /* Foundation.framework */; };
+		B7852BD217FCA2300061F1AE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7852BD117FCA2300061F1AE /* SystemConfiguration.framework */; };
+		B7852BDC17FCA3A00061F1AE /* MutLockArray.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852BD417FCA3A00061F1AE /* MutLockArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BDD17FCA3A00061F1AE /* MutLockArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852BD517FCA3A00061F1AE /* MutLockArray.m */; };
+		B7852BDE17FCA3A00061F1AE /* MutLockDict.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852BD617FCA3A00061F1AE /* MutLockDict.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BDF17FCA3A00061F1AE /* MutLockDict.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852BD717FCA3A00061F1AE /* MutLockDict.m */; };
+		B7852BE017FCA3A00061F1AE /* MutNRLockArray.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852BD817FCA3A00061F1AE /* MutNRLockArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BE117FCA3A00061F1AE /* MutNRLockArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852BD917FCA3A00061F1AE /* MutNRLockArray.m */; };
+		B7852BE217FCA3A00061F1AE /* ObjectHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852BDA17FCA3A00061F1AE /* ObjectHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7852BE317FCA3A00061F1AE /* ObjectHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852BDB17FCA3A00061F1AE /* ObjectHolder.m */; };
+		B7852BE617FCA3FB0061F1AE /* MAZeroingWeakRef.h in Sources */ = {isa = PBXBuildFile; fileRef = B7852BE417FCA3FB0061F1AE /* MAZeroingWeakRef.h */; };
+		B7852BE717FCA3FB0061F1AE /* MAZeroingWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = B7852BE517FCA3FB0061F1AE /* MAZeroingWeakRef.m */; };
+		B7852BE917FCA4300061F1AE /* VVBasicMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852BE817FCA4300061F1AE /* VVBasicMacros.h */; };
+		B7852BEB17FCA4470061F1AE /* MAZeroingWeakRefNativeZWRNotAllowedTable.h in Headers */ = {isa = PBXBuildFile; fileRef = B7852BEA17FCA4470061F1AE /* MAZeroingWeakRefNativeZWRNotAllowedTable.h */; };
+		B7852BED17FCA5050061F1AE /* VVOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7852BA617FCA0EE0061F1AE /* VVOSC.framework */; };
 		B7B4843C17C3D6BC00010EFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B4843B17C3D6BC00010EFB /* Cocoa.framework */; };
 		B7B4844617C3D6BC00010EFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7B4844417C3D6BC00010EFB /* InfoPlist.strings */; };
 		B7B4844817C3D6BC00010EFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B4844717C3D6BC00010EFB /* main.m */; };
 		B7B4844C17C3D6BC00010EFB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B7B4844A17C3D6BC00010EFB /* Credits.rtf */; };
 		B7B4844F17C3D6BC00010EFB /* HXMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B4844E17C3D6BC00010EFB /* HXMAppDelegate.m */; };
 		B7B4845217C3D6BC00010EFB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B4845017C3D6BC00010EFB /* MainMenu.xib */; };
+		B7B4845A17C3D85300010EFB /* HXMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B4845917C3D85300010EFB /* HXMModel.m */; };
+		B7B4845C17C3D94700010EFB /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B4845B17C3D94700010EFB /* IOBluetooth.framework */; };
+		B7B4846017C55FCE00010EFB /* IOBluetoothUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B4845F17C55FCE00010EFB /* IOBluetoothUI.framework */; };
+		B7B4846317C6607B00010EFB /* HXMMonitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B4846217C6607B00010EFB /* HXMMonitorView.m */; };
+		B7B4846617C66ED500010EFB /* HXMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B4846517C66ED500010EFB /* HXMDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7852B7B17FC93F60061F1AE /* VVOSC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVOSC.h; sourceTree = "<group>"; };
+		B7852B7D17FC941B0061F1AE /* OSCAddressSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCAddressSpace.h; sourceTree = "<group>"; };
+		B7852B7E17FC941B0061F1AE /* OSCAddressSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCAddressSpace.m; sourceTree = "<group>"; };
+		B7852B7F17FC941B0061F1AE /* OSCBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCBundle.h; sourceTree = "<group>"; };
+		B7852B8017FC941B0061F1AE /* OSCBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCBundle.m; sourceTree = "<group>"; };
+		B7852B8117FC941B0061F1AE /* OSCConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCConstants.h; sourceTree = "<group>"; };
+		B7852B8217FC941B0061F1AE /* OSCInPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCInPort.h; sourceTree = "<group>"; };
+		B7852B8317FC941B0061F1AE /* OSCInPort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCInPort.m; sourceTree = "<group>"; };
+		B7852B8417FC941B0061F1AE /* OSCManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCManager.h; sourceTree = "<group>"; };
+		B7852B8517FC941B0061F1AE /* OSCManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCManager.m; sourceTree = "<group>"; };
+		B7852B8617FC941B0061F1AE /* OSCMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCMessage.h; sourceTree = "<group>"; };
+		B7852B8717FC941B0061F1AE /* OSCMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCMessage.m; sourceTree = "<group>"; };
+		B7852B8817FC941B0061F1AE /* OSCNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCNode.h; sourceTree = "<group>"; };
+		B7852B8917FC941B0061F1AE /* OSCNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCNode.m; sourceTree = "<group>"; };
+		B7852B8A17FC941B0061F1AE /* OSCOutPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCOutPort.h; sourceTree = "<group>"; };
+		B7852B8B17FC941B0061F1AE /* OSCOutPort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCOutPort.m; sourceTree = "<group>"; };
+		B7852B8C17FC941B0061F1AE /* OSCPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCPacket.h; sourceTree = "<group>"; };
+		B7852B8D17FC941B0061F1AE /* OSCPacket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCPacket.m; sourceTree = "<group>"; };
+		B7852B8E17FC941B0061F1AE /* OSCStringAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCStringAdditions.h; sourceTree = "<group>"; };
+		B7852B8F17FC941B0061F1AE /* OSCStringAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCStringAdditions.m; sourceTree = "<group>"; };
+		B7852B9017FC941B0061F1AE /* OSCValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCValue.h; sourceTree = "<group>"; };
+		B7852B9117FC941B0061F1AE /* OSCValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCValue.m; sourceTree = "<group>"; };
+		B7852B9217FC941B0061F1AE /* OSCZeroConfDomain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCZeroConfDomain.h; sourceTree = "<group>"; };
+		B7852B9317FC941B0061F1AE /* OSCZeroConfDomain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCZeroConfDomain.m; sourceTree = "<group>"; };
+		B7852B9417FC941B0061F1AE /* OSCZeroConfManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCZeroConfManager.h; sourceTree = "<group>"; };
+		B7852B9517FC941B0061F1AE /* OSCZeroConfManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCZeroConfManager.m; sourceTree = "<group>"; };
+		B7852BA617FCA0EE0061F1AE /* VVOSC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VVOSC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7852BAA17FCA0EE0061F1AE /* VVOSC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "VVOSC-Info.plist"; path = "../VVOSC/VVOSC-Info.plist"; sourceTree = "<group>"; };
+		B7852BAC17FCA0EE0061F1AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B7852BAE17FCA0EE0061F1AE /* VVOSC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VVOSC-Prefix.pch"; path = "../VVOSC/VVOSC-Prefix.pch"; sourceTree = "<group>"; };
+		B7852BCF17FCA2210061F1AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B7852BD117FCA2300061F1AE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		B7852BD417FCA3A00061F1AE /* MutLockArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutLockArray.h; sourceTree = "<group>"; };
+		B7852BD517FCA3A00061F1AE /* MutLockArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutLockArray.m; sourceTree = "<group>"; };
+		B7852BD617FCA3A00061F1AE /* MutLockDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutLockDict.h; sourceTree = "<group>"; };
+		B7852BD717FCA3A00061F1AE /* MutLockDict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutLockDict.m; sourceTree = "<group>"; };
+		B7852BD817FCA3A00061F1AE /* MutNRLockArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutNRLockArray.h; sourceTree = "<group>"; };
+		B7852BD917FCA3A00061F1AE /* MutNRLockArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutNRLockArray.m; sourceTree = "<group>"; };
+		B7852BDA17FCA3A00061F1AE /* ObjectHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectHolder.h; sourceTree = "<group>"; };
+		B7852BDB17FCA3A00061F1AE /* ObjectHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectHolder.m; sourceTree = "<group>"; };
+		B7852BE417FCA3FB0061F1AE /* MAZeroingWeakRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAZeroingWeakRef.h; sourceTree = "<group>"; };
+		B7852BE517FCA3FB0061F1AE /* MAZeroingWeakRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAZeroingWeakRef.m; sourceTree = "<group>"; };
+		B7852BE817FCA4300061F1AE /* VVBasicMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVBasicMacros.h; sourceTree = "<group>"; };
+		B7852BEA17FCA4470061F1AE /* MAZeroingWeakRefNativeZWRNotAllowedTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAZeroingWeakRefNativeZWRNotAllowedTable.h; sourceTree = "<group>"; };
 		B7B4843817C3D6BC00010EFB /* HXM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B4843B17C3D6BC00010EFB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B7B4843E17C3D6BC00010EFB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,13 +121,34 @@
 		B7B4844D17C3D6BC00010EFB /* HXMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXMAppDelegate.h; sourceTree = "<group>"; };
 		B7B4844E17C3D6BC00010EFB /* HXMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXMAppDelegate.m; sourceTree = "<group>"; };
 		B7B4845117C3D6BC00010EFB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B7B4845817C3D85300010EFB /* HXMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXMModel.h; sourceTree = "<group>"; };
+		B7B4845917C3D85300010EFB /* HXMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXMModel.m; sourceTree = "<group>"; };
+		B7B4845B17C3D94700010EFB /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		B7B4845F17C55FCE00010EFB /* IOBluetoothUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetoothUI.framework; path = System/Library/Frameworks/IOBluetoothUI.framework; sourceTree = SDKROOT; };
+		B7B4846117C6607B00010EFB /* HXMMonitorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXMMonitorView.h; sourceTree = "<group>"; };
+		B7B4846217C6607B00010EFB /* HXMMonitorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXMMonitorView.m; sourceTree = "<group>"; };
+		B7B4846417C66ED500010EFB /* HXMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXMDevice.h; sourceTree = "<group>"; };
+		B7B4846517C66ED500010EFB /* HXMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXMDevice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B7852BA217FCA0EE0061F1AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7852BD217FCA2300061F1AE /* SystemConfiguration.framework in Frameworks */,
+				B7852BD017FCA2210061F1AE /* Foundation.framework in Frameworks */,
+				B7852BA717FCA0EE0061F1AE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7B4843517C3D6BC00010EFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7852BED17FCA5050061F1AE /* VVOSC.framework in Frameworks */,
+				B7B4846017C55FCE00010EFB /* IOBluetoothUI.framework in Frameworks */,
+				B7B4845C17C3D94700010EFB /* IOBluetooth.framework in Frameworks */,
 				B7B4843C17C3D6BC00010EFB /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,9 +156,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B7852B7A17FC93D30061F1AE /* VVOSC */ = {
+			isa = PBXGroup;
+			children = (
+				B7852BEC17FCA4670061F1AE /* Frameworks */,
+				B7852BD317FCA3100061F1AE /* VVBasics */,
+				B7852BA917FCA0EE0061F1AE /* Supporting Files */,
+				B7852BAA17FCA0EE0061F1AE /* VVOSC-Info.plist */,
+				B7852BAB17FCA0EE0061F1AE /* InfoPlist.strings */,
+				B7852BAE17FCA0EE0061F1AE /* VVOSC-Prefix.pch */,
+				B7852B7C17FC93FD0061F1AE /* src */,
+				B7852B7B17FC93F60061F1AE /* VVOSC.h */,
+			);
+			name = VVOSC;
+			path = HXM;
+			sourceTree = "<group>";
+		};
+		B7852B7C17FC93FD0061F1AE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B7852B7D17FC941B0061F1AE /* OSCAddressSpace.h */,
+				B7852B7E17FC941B0061F1AE /* OSCAddressSpace.m */,
+				B7852B7F17FC941B0061F1AE /* OSCBundle.h */,
+				B7852B8017FC941B0061F1AE /* OSCBundle.m */,
+				B7852B8117FC941B0061F1AE /* OSCConstants.h */,
+				B7852B8217FC941B0061F1AE /* OSCInPort.h */,
+				B7852B8317FC941B0061F1AE /* OSCInPort.m */,
+				B7852B8417FC941B0061F1AE /* OSCManager.h */,
+				B7852B8517FC941B0061F1AE /* OSCManager.m */,
+				B7852B8617FC941B0061F1AE /* OSCMessage.h */,
+				B7852B8717FC941B0061F1AE /* OSCMessage.m */,
+				B7852B8817FC941B0061F1AE /* OSCNode.h */,
+				B7852B8917FC941B0061F1AE /* OSCNode.m */,
+				B7852B8A17FC941B0061F1AE /* OSCOutPort.h */,
+				B7852B8B17FC941B0061F1AE /* OSCOutPort.m */,
+				B7852B8C17FC941B0061F1AE /* OSCPacket.h */,
+				B7852B8D17FC941B0061F1AE /* OSCPacket.m */,
+				B7852B8E17FC941B0061F1AE /* OSCStringAdditions.h */,
+				B7852B8F17FC941B0061F1AE /* OSCStringAdditions.m */,
+				B7852B9017FC941B0061F1AE /* OSCValue.h */,
+				B7852B9117FC941B0061F1AE /* OSCValue.m */,
+				B7852B9217FC941B0061F1AE /* OSCZeroConfDomain.h */,
+				B7852B9317FC941B0061F1AE /* OSCZeroConfDomain.m */,
+				B7852B9417FC941B0061F1AE /* OSCZeroConfManager.h */,
+				B7852B9517FC941B0061F1AE /* OSCZeroConfManager.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		B7852BA917FCA0EE0061F1AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			path = ../VVOSC;
+			sourceTree = "<group>";
+		};
+		B7852BD317FCA3100061F1AE /* VVBasics */ = {
+			isa = PBXGroup;
+			children = (
+				B7852BEA17FCA4470061F1AE /* MAZeroingWeakRefNativeZWRNotAllowedTable.h */,
+				B7852BE817FCA4300061F1AE /* VVBasicMacros.h */,
+				B7852BE417FCA3FB0061F1AE /* MAZeroingWeakRef.h */,
+				B7852BE517FCA3FB0061F1AE /* MAZeroingWeakRef.m */,
+				B7852BD417FCA3A00061F1AE /* MutLockArray.h */,
+				B7852BD517FCA3A00061F1AE /* MutLockArray.m */,
+				B7852BD617FCA3A00061F1AE /* MutLockDict.h */,
+				B7852BD717FCA3A00061F1AE /* MutLockDict.m */,
+				B7852BD817FCA3A00061F1AE /* MutNRLockArray.h */,
+				B7852BD917FCA3A00061F1AE /* MutNRLockArray.m */,
+				B7852BDA17FCA3A00061F1AE /* ObjectHolder.h */,
+				B7852BDB17FCA3A00061F1AE /* ObjectHolder.m */,
+			);
+			name = VVBasics;
+			sourceTree = "<group>";
+		};
+		B7852BEC17FCA4670061F1AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7852BD117FCA2300061F1AE /* SystemConfiguration.framework */,
+				B7852BCF17FCA2210061F1AE /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B7B4842F17C3D6BC00010EFB = {
 			isa = PBXGroup;
 			children = (
+				B7852B7A17FC93D30061F1AE /* VVOSC */,
 				B7B4844117C3D6BC00010EFB /* HXM */,
 				B7B4843A17C3D6BC00010EFB /* Frameworks */,
 				B7B4843917C3D6BC00010EFB /* Products */,
@@ -56,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				B7B4843817C3D6BC00010EFB /* HXM.app */,
+				B7852BA617FCA0EE0061F1AE /* VVOSC.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +271,8 @@
 		B7B4843D17C3D6BC00010EFB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7B4845F17C55FCE00010EFB /* IOBluetoothUI.framework */,
+				B7B4845B17C3D94700010EFB /* IOBluetooth.framework */,
 				B7B4843E17C3D6BC00010EFB /* AppKit.framework */,
 				B7B4843F17C3D6BC00010EFB /* CoreData.framework */,
 				B7B4844017C3D6BC00010EFB /* Foundation.framework */,
@@ -86,6 +287,12 @@
 				B7B4844E17C3D6BC00010EFB /* HXMAppDelegate.m */,
 				B7B4845017C3D6BC00010EFB /* MainMenu.xib */,
 				B7B4844217C3D6BC00010EFB /* Supporting Files */,
+				B7B4845817C3D85300010EFB /* HXMModel.h */,
+				B7B4845917C3D85300010EFB /* HXMModel.m */,
+				B7B4846117C6607B00010EFB /* HXMMonitorView.h */,
+				B7B4846217C6607B00010EFB /* HXMMonitorView.m */,
+				B7B4846417C66ED500010EFB /* HXMDevice.h */,
+				B7B4846517C66ED500010EFB /* HXMDevice.m */,
 			);
 			path = HXM;
 			sourceTree = "<group>";
@@ -104,7 +311,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B7852BA317FCA0EE0061F1AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7852BDC17FCA3A00061F1AE /* MutLockArray.h in Headers */,
+				B7852BDE17FCA3A00061F1AE /* MutLockDict.h in Headers */,
+				B7852BE017FCA3A00061F1AE /* MutNRLockArray.h in Headers */,
+				B7852BE217FCA3A00061F1AE /* ObjectHolder.h in Headers */,
+				B7852BB517FCA1BC0061F1AE /* OSCAddressSpace.h in Headers */,
+				B7852BB617FCA1BC0061F1AE /* OSCBundle.h in Headers */,
+				B7852BB717FCA1BC0061F1AE /* OSCConstants.h in Headers */,
+				B7852BB817FCA1BC0061F1AE /* OSCInPort.h in Headers */,
+				B7852BB917FCA1BC0061F1AE /* OSCManager.h in Headers */,
+				B7852BBA17FCA1BC0061F1AE /* OSCMessage.h in Headers */,
+				B7852BBB17FCA1BC0061F1AE /* OSCNode.h in Headers */,
+				B7852BBC17FCA1BC0061F1AE /* OSCOutPort.h in Headers */,
+				B7852BBD17FCA1BC0061F1AE /* OSCPacket.h in Headers */,
+				B7852BBE17FCA1BC0061F1AE /* OSCStringAdditions.h in Headers */,
+				B7852BBF17FCA1BC0061F1AE /* OSCValue.h in Headers */,
+				B7852BC017FCA1BC0061F1AE /* OSCZeroConfDomain.h in Headers */,
+				B7852BC117FCA1BC0061F1AE /* OSCZeroConfManager.h in Headers */,
+				B7852BC217FCA1BC0061F1AE /* VVOSC.h in Headers */,
+				B7852BE917FCA4300061F1AE /* VVBasicMacros.h in Headers */,
+				B7852BEB17FCA4470061F1AE /* MAZeroingWeakRefNativeZWRNotAllowedTable.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		B7852BA517FCA0EE0061F1AE /* VVOSC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7852BB217FCA0EE0061F1AE /* Build configuration list for PBXNativeTarget "VVOSC" */;
+			buildPhases = (
+				B7852BA317FCA0EE0061F1AE /* Headers */,
+				B7852BA117FCA0EE0061F1AE /* Sources */,
+				B7852BA217FCA0EE0061F1AE /* Frameworks */,
+				B7852BA417FCA0EE0061F1AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VVOSC;
+			productName = VVOSC;
+			productReference = B7852BA617FCA0EE0061F1AE /* VVOSC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		B7B4843717C3D6BC00010EFB /* HXM */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7B4845517C3D6BC00010EFB /* Build configuration list for PBXNativeTarget "HXM" */;
@@ -145,11 +400,20 @@
 			projectRoot = "";
 			targets = (
 				B7B4843717C3D6BC00010EFB /* HXM */,
+				B7852BA517FCA0EE0061F1AE /* VVOSC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B7852BA417FCA0EE0061F1AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7852BAD17FCA0EE0061F1AE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7B4843617C3D6BC00010EFB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,18 +427,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B7852BA117FCA0EE0061F1AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7852BE617FCA3FB0061F1AE /* MAZeroingWeakRef.h in Sources */,
+				B7852BC317FCA2020061F1AE /* OSCAddressSpace.m in Sources */,
+				B7852BC417FCA2020061F1AE /* OSCBundle.m in Sources */,
+				B7852BC517FCA2020061F1AE /* OSCInPort.m in Sources */,
+				B7852BC617FCA2020061F1AE /* OSCManager.m in Sources */,
+				B7852BC717FCA2020061F1AE /* OSCMessage.m in Sources */,
+				B7852BC817FCA2020061F1AE /* OSCNode.m in Sources */,
+				B7852BC917FCA2020061F1AE /* OSCOutPort.m in Sources */,
+				B7852BCA17FCA2020061F1AE /* OSCPacket.m in Sources */,
+				B7852BCB17FCA2020061F1AE /* OSCStringAdditions.m in Sources */,
+				B7852BCC17FCA2020061F1AE /* OSCValue.m in Sources */,
+				B7852BCD17FCA2020061F1AE /* OSCZeroConfDomain.m in Sources */,
+				B7852BCE17FCA2020061F1AE /* OSCZeroConfManager.m in Sources */,
+				B7852BDD17FCA3A00061F1AE /* MutLockArray.m in Sources */,
+				B7852BDF17FCA3A00061F1AE /* MutLockDict.m in Sources */,
+				B7852BE117FCA3A00061F1AE /* MutNRLockArray.m in Sources */,
+				B7852BE317FCA3A00061F1AE /* ObjectHolder.m in Sources */,
+				B7852BE717FCA3FB0061F1AE /* MAZeroingWeakRef.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7B4843417C3D6BC00010EFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B7B4844817C3D6BC00010EFB /* main.m in Sources */,
 				B7B4844F17C3D6BC00010EFB /* HXMAppDelegate.m in Sources */,
+				B7B4845A17C3D85300010EFB /* HXMModel.m in Sources */,
+				B7B4846317C6607B00010EFB /* HXMMonitorView.m in Sources */,
+				B7B4846617C66ED500010EFB /* HXMDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		B7852BAB17FCA0EE0061F1AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7852BAC17FCA0EE0061F1AE /* en */,
+			);
+			name = InfoPlist.strings;
+			path = ../VVOSC;
+			sourceTree = "<group>";
+		};
 		B7B4844417C3D6BC00010EFB /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -202,11 +503,47 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B7852BB317FCA0EE0061F1AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VVOSC/VVOSC-Prefix.pch";
+				INFOPLIST_FILE = "VVOSC/VVOSC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		B7852BB417FCA0EE0061F1AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VVOSC/VVOSC-Prefix.pch";
+				INFOPLIST_FILE = "VVOSC/VVOSC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 		B7B4845317C3D6BC00010EFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -229,9 +566,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "@executable_path/../Frameworks";
+				INSTALL_PATH = "~/code/HXM/debug";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.7;
+				SYMROOT = "~/code/HXM/debug/build";
 			};
 			name = Debug;
 		};
@@ -239,7 +579,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -256,8 +596,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "@executable_path/../Frameworks";
+				INSTALL_PATH = "~/code/HXM/release";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
+				SYMROOT = "~/code/HXM/debug/build";
 			};
 			name = Release;
 		};
@@ -265,9 +609,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HXM/HXM-Prefix.pch";
 				INFOPLIST_FILE = "HXM/HXM-Info.plist";
+				OTHER_LDFLAGS = "-mmacosx-version-min=10.7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -277,9 +626,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HXM/HXM-Prefix.pch";
 				INFOPLIST_FILE = "HXM/HXM-Info.plist";
+				OTHER_LDFLAGS = "-mmacosx-version-min=10.7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -288,6 +642,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B7852BB217FCA0EE0061F1AE /* Build configuration list for PBXNativeTarget "VVOSC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7852BB317FCA0EE0061F1AE /* Debug */,
+				B7852BB417FCA0EE0061F1AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B7B4843317C3D6BC00010EFB /* Build configuration list for PBXProject "HXM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -304,6 +667,7 @@
 				B7B4845717C3D6BC00010EFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,9 +7,31 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "HXMModel.h"
+#import "HXMMonitorView.h"
 
-@interface HXMAppDelegate : NSObject <NSApplicationDelegate>
+@interface HXMAppDelegate : NSObject <NSApplicationDelegate> {
+	HXMModel *_model;
+	NSArray *_subview;
+	HXMMonitorView *_m0;
+	__weak NSPopUpButton *HR2Color;
+	__weak NSTextField *HR2;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+@property (strong) NSMutableArray *deviceList;
+@property (weak) IBOutlet NSScrollView *deviceItems;
+@property (weak) IBOutlet NSTextField *HR1;
+@property (weak) IBOutlet NSTextField *HR2;
+@property (strong) NSArrayController *colorValueSelections;
+@property (weak) IBOutlet NSPopUpButton *HR1Color;
+@property (weak) IBOutlet NSPopUpButton *HR2Color;
+
+
+- (IBAction)search:(id)sender;
+- (void)updateHR:(int)HR forPlayer:(int)Player;
+- (IBAction)P1ColorChanged:(id)sender;
+- (IBAction)P2ColorChanged:(id)sender;
+
 
 @end
