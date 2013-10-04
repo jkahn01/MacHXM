@@ -50,7 +50,7 @@
 }
 
 - (IBAction)P2ColorChanged:(id)sender {
-	[_model setPlayer:1 color:[HR1Color titleOfSelectedItem]];
+	[_model setPlayer:1 color:[HR2Color titleOfSelectedItem]];
 }
 
 - (IBAction)search:(id)sender {
