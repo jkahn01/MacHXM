@@ -10,6 +10,7 @@
 
 @implementation HXMAppDelegate
 @synthesize HR2Color;
+@synthesize loggingButton;
 @synthesize HR2;
 @synthesize HR1, colorValueSelections, HR1Color;
 
@@ -51,6 +52,15 @@
 
 - (IBAction)P2ColorChanged:(id)sender {
 	[_model setPlayer:1 color:[HR2Color titleOfSelectedItem]];
+}
+
+- (IBAction)toggleLogging:(id)sender {
+	[_model toggleLogging];
+	if ([_model logging]) {
+		[loggingButton setTitle:@"Stop logging"];
+	} else {
+		[loggingButton setTitle:@"Start logging"];
+	}
 }
 
 - (IBAction)search:(id)sender {

@@ -25,6 +25,8 @@
 	OSCOutPort *oscOut;
 	int players;
 	NSMutableArray *devices;
+	bool _logging;
+	NSFileHandle *file;
 }
 
 - (HXMModel *) init;
@@ -32,5 +34,7 @@
 - (void) searchForDevices;
 - (void) updateHR:(int)HR forPlayer:(int)Player;
 - (void) setPlayer:(int)player color:(NSString *)color;
+- (void) toggleLogging;
+- (bool) logging;
 
 @end

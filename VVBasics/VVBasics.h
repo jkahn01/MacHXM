@@ -1,3 +1,4 @@
+// VVBasics LGPL from https://github.com/mrRay/vvopensource
 
 #import "VVBasicMacros.h"
 

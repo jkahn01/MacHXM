@@ -15,6 +15,7 @@
 	NSArray *_subview;
 	HXMMonitorView *_m0;
 	__weak NSPopUpButton *HR2Color;
+	__weak NSButton *loggingButton;
 	__weak NSTextField *HR2;
 }
 
@@ -26,12 +27,14 @@
 @property (strong) NSArrayController *colorValueSelections;
 @property (weak) IBOutlet NSPopUpButton *HR1Color;
 @property (weak) IBOutlet NSPopUpButton *HR2Color;
+@property (weak) IBOutlet NSButton *loggingButton;
 
 
 - (IBAction)search:(id)sender;
 - (void)updateHR:(int)HR forPlayer:(int)Player;
 - (IBAction)P1ColorChanged:(id)sender;
 - (IBAction)P2ColorChanged:(id)sender;
+- (IBAction)toggleLogging:(id)sender;
 
 
 @end

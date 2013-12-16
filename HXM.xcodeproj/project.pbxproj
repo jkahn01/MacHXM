@@ -732,7 +732,7 @@
 		B7656C2717FCC59D00AD9DCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -743,7 +743,7 @@
 				INFOPLIST_FILE = "VVBasics/VVBasics-Info.plist";
 				INSTALL_PATH = /Library/Frameworks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -751,7 +751,7 @@
 		B7656C2817FCC59D00AD9DCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -762,7 +762,7 @@
 				INFOPLIST_FILE = "VVBasics/VVBasics-Info.plist";
 				INSTALL_PATH = /Library/Frameworks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -834,7 +834,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "@executable_path/../Frameworks";
 				INSTALL_PATH = "~/code/HXM/debug";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.7;
 				SYMROOT = "~/code/HXM/debug/build";
@@ -864,7 +864,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "@executable_path/../Frameworks";
 				INSTALL_PATH = "~/code/HXM/release";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.7;
 				SYMROOT = "~/code/HXM/debug/build";
@@ -883,8 +883,10 @@
 				GCC_PREFIX_HEADER = "HXM/HXM-Prefix.pch";
 				INFOPLIST_FILE = "HXM/HXM-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "-mmacosx-version-min=10.7";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -901,8 +903,10 @@
 				GCC_PREFIX_HEADER = "HXM/HXM-Prefix.pch";
 				INFOPLIST_FILE = "HXM/HXM-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "-mmacosx-version-min=10.7";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

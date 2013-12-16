@@ -1,4 +1,4 @@
-
+// VVOCS LGPL from https://github.com/mrRay/vvopensource
 
 #import "OSCConstants.h"
 

@@ -20,6 +20,7 @@
 		oscOut = [osc createNewOutputToAddress:@"127.0.0.1" atPort:9000];
 		devices = [[NSMutableArray alloc] initWithCapacity:4];
 		players = -1;
+		_logging = false;
 	}
 	return self;
 }
@@ -65,12 +66,58 @@
 	[msg addString:h.color];
 	
 	[oscOut sendThisMessage:msg];
+	
+	//write log
+	if (_logging && (file != nil)) {
+		NSDate *d = [NSDate date];
+		NSDateFormatter *f = [[NSDateFormatter alloc] init];
+		[f setDateFormat:@"YYYY/MM/dd hh:mm:ss.SSS"];
+		NSString *time = [f stringFromDate:d];
+		NSString *output = [NSString stringWithFormat:@"%@,%i,%i\n", time, Player, HR];
+		NSLog(output);
+		[file writeData:[output dataUsingEncoding:NSUTF8StringEncoding]];
+	}
 }
 
 - (void) setPlayer:(int)player color:(NSString *)color {
 	if (player > players) return;
 	HXMDevice *h = [devices objectAtIndex:player];
 	h.color = color;
+}
+
+- (void) toggleLogging {
+	_logging = !_logging;
+	NSFileManager *fm = [[NSFileManager alloc] init];
+	if (_logging) {
+		//check if output directory exists
+		NSString *outDir = @"~/RAGE-Logs/";
+		outDir = [outDir stringByExpandingTildeInPath];
+		BOOL isDir;
+		[fm fileExistsAtPath:outDir isDirectory:&isDir];
+		if (!isDir) {
+			[fm createDirectoryAtPath:outDir
+		  withIntermediateDirectories:NO
+						   attributes:nil
+								error:nil];
+		}
+		NSDate *d = [NSDate date];
+		NSDateFormatter *f = [[NSDateFormatter alloc] init];
+		[f setDateFormat:@"YYYY-MM-dd hh.mm.ss"];
+		NSString *outFile = [f stringFromDate:d];
+		outFile = [NSString stringWithFormat:@"%@/Log %@.csv", outDir, outFile];
+		[fm createFileAtPath:outFile
+					contents:nil
+				  attributes:nil];
+		file = [NSFileHandle fileHandleForWritingAtPath:outFile];
+		[file writeData:[@"Time,Player,HR\n" dataUsingEncoding:NSUTF8StringEncoding]];
+	} else {
+		[file closeFile];
+		file = nil;
+	}
+}
+
+- (bool) logging {
+	return _logging;
 }
 
 @end
